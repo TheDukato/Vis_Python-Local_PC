@@ -8,7 +8,7 @@ db = pymysql.connect(host=strin[0][0:-1],user=strin[1][0:-1],password=strin[2][0
 cursor = db.cursor()
 
 cursor.execute("use ACQ")
-print(cursor.fetchone())
+cursor.fetchone()
 
 ID_Loc = input("Enter ID_Location: ")
 
